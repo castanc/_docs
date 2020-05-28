@@ -1,2 +1,12 @@
 https://console.cloud.google.com/invitation?project=silent-oxide-275701&account=castanc@gmail.com&memberEmail=castanc@gmail.com
 ssh -i ~/.ssh/testuser testuser@138.91.164.26
+
+20200528  free infographics
+https://infograph.venngage.com/edit/e1f2a648-bfc1-47e0-923d-108167804937
+
+20200528  BLAZOR Tables full funcitonality
+https://www.grapecity.com/blogs/upgrading-blazor-html-table-with-flexgrid
+
+20200528  BLAZOR Clipboard service
+https://github.com/Basaingeal/Blazor.Clipboard
+
