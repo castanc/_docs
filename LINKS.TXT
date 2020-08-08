@@ -13,3 +13,5 @@ https://github.com/Basaingeal/Blazor.Clipboard
 meeting rengine
 https://www.google.com/url?q=https://pwc-americasmc-us.webex.com/meet/pr1006650977&sa=D&ust=1592687937602000&usg=AOvVaw1EL54R5NYBe6AQkx3lFDV_
 
+EF COIRE Relations
+https://docs.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key
