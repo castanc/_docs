@@ -12,7 +12,6 @@ using System.Windows.Automation;
 using System.Diagnostics;
 
 namespace Launcher
-
 {
     public class Launcher
     {
@@ -102,7 +101,7 @@ namespace Launcher
                     else
                     {
                         //kill process
-                        sp.Kill();
+                        //sp.Kill();
                         result = false;
                         launchTCS();
                         break;
@@ -116,6 +115,15 @@ namespace Launcher
 
             }
             return result;
+        }
+
+        public void GetByAutomation()
+        {
+            searchTry = 0;
+            selectedProcs = new List<Process>();
+            winFound = false;
+            items.Clear();
+            showTabTitles();
         }
         public void btnShowTabTitles_Click(object sender, EventArgs e)
         {
@@ -170,15 +178,18 @@ namespace Launcher
                 GetClassName(hwnd, sClassName, sClassName.Capacity);
 
                 //Only want visible chrome windows (not any electron type apps that have chrome embedded!)
-                if (((sClassName.ToString() == "Chrome_WidgetWin_1") && (processFromID.ProcessName == "chrome")))
+                //if (((sClassName.ToString() == "Chrome_WidgetWin_1") && (processFromID.ProcessName == "chrome")))
+                if (processFromID.ProcessName == "chrome")
                 {
-                    if (!FindChromeTabs(hwnd) && processFromID.MainWindowTitle.ToLower().Contains("tcs"))
+                    //if (!FindChromeTabs(hwnd) && processFromID.MainWindowTitle.ToLower().Contains("tcs"))
+                    if (!FindChromeTabs(hwnd))
                     {
                         items.Add("Possible candidate window: [" + processFromID.MainWindowTitle + "] " + processFromID.MainWindowHandle.ToString());
                         selectedProcs.Add(processFromID);
                     }
 
                 }
+                string s = processFromID.MainWindowTitle;
 
             }
 
@@ -200,7 +211,21 @@ namespace Launcher
             //No tabstrip found
             if ((elemNewTab == null))
             {
-                tabTitles.Add(hwnd.ToString() + " Possible TCS handle");
+                //tabTitles.Add(hwnd.ToString() + " Possible TCS handle");
+                AutomationElement elm = AutomationElement.FromHandle(hwnd);
+                AutomationElement elmUrlBar = elm.FindFirst(TreeScope.Descendants,new PropertyCondition(AutomationElement.NameProperty, "Address and searchbar"));
+
+                // if it can be found, get the value from the URL bar
+                if (elmUrlBar != null)
+                {
+                    AutomationPattern[] patterns = elmUrlBar.GetSupportedPatterns();
+                    if (patterns.Length > 0)
+                    {
+                        ValuePattern val =
+                        (ValuePattern)elmUrlBar.GetCurrentPattern(patterns[0]);
+                        Console.WriteLine("Chrome URL found: " + val.Current.Value);
+                    }
+                }
                 return false;
             }
 
@@ -239,6 +264,12 @@ namespace Launcher
             if (selectedProcs.Count == 0) items.Add("NO TCS DeskHelp windows found");
         }
 
+
+        public void GetWinTitles()
+        {
+            searchTry = 0;
+            getWinTitles();
+        }
         public void btnGetWinTitles_Click(object sender, EventArgs e)
         {
             searchTry = 0;
