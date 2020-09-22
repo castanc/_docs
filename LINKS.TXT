@@ -15,3 +15,7 @@ https://www.google.com/url?q=https://pwc-americasmc-us.webex.com/meet/pr10066509
 
 EF COIRE Relations
 https://docs.microsoft.com/en-us/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key
+
+
+tailor pwa
+https://docs.microsoft.com/en-us/microsoft-edge/progressive-web-apps-edgehtml/windows-features
