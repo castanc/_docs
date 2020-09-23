@@ -25,3 +25,6 @@ https://deskhelptest.azurewebsites.net/ui/login
 
 pwa in windows and push notifications
 https://techcommunity.microsoft.com/t5/windows-dev-appconsult/activating-a-progressive-web-app-on-windows-10-using-a-toast/ba-p/317221
+
+use rui links
+https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking
