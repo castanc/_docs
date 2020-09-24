@@ -28,3 +28,10 @@ https://techcommunity.microsoft.com/t5/windows-dev-appconsult/activating-a-progr
 
 use rui links
 https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking
+
+
+uwp diagnosics
+https://blogs.windows.com/windowsdeveloper/2017/06/28/uwp-app-diagnostics/
+
+wmi
+https://social.msdn.microsoft.com/Forums/vstudio/en-US/608a2bc0-3bf8-4845-b0d8-09f2624189f7/how-do-i-get-cpu-usage-from-wmi?forum=netfxbcl
