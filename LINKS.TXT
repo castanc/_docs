@@ -47,3 +47,7 @@ C:\Users\1672153\sample-app
 
 https://docs.microsoft.com/en-us/uwp/api/windows.system.userprofile.userinformation?view=winrt-19041
 
+
+
+appdiagnosticinfo
+https://stackoverflow.com/questions/46962375/windows-xbox-javascript-uwp-app-get-cpu-memory-usage
