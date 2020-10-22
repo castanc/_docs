@@ -1,3 +1,7 @@
+QR CODE GENERATOR
+https://usefulangle.com/post/245/javascript-create-qr-code
+
+
 
 create and consume uwp appservice
 https://docs.microsoft.com/en-us/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service
