@@ -1,0 +1,10 @@
+Docker - Container Orcas: https://play.fresco.me/course/112
+Docker - Magneta: https://play.fresco.me/course/238
+Docker Swarm: https://play.fresco.me/course/269
+LinkedIn Learning:
+Learning Docker: https://www.linkedin.com/learning/learning-docker-2/why-create-containers-using-docker?u=2154233
+Udemy:
+Learn Docker: https://tcsglobal.udemy.com/course/learn-docker/
+
+
+linsk from the talk on docker
